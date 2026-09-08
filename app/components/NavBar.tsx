@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 // ... [SVG Components remain unchanged] ...
 
@@ -103,7 +104,12 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-[45] transition-colors duration-300 ${navBgColor} ${navTextColor}`}>
+      <motion.nav 
+        initial={{ y: "-100%" }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        className={`fixed top-0 left-0 w-full z-[45] transition-colors duration-300 ${navBgColor} ${navTextColor}`}
+      >
         <div className="w-full px-4 lg:px-6 py-3 flex justify-between items-center">
           
           {/* Left Navigation (Desktop only) */}
@@ -166,7 +172,7 @@ export default function NavBar() {
             </button>
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Full Screen Menu Overlay */}
       <div

@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import SmoothScrolling from "./components/SmoothScrolling";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -32,9 +33,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <NavBar />
-        {children}
-        <Footer />
+        <SmoothScrolling>
+          <NavBar />
+          {children}
+          <Footer />
+        </SmoothScrolling>
       </body>
     </html>
   );

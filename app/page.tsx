@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -22,17 +25,32 @@ export default function Home() {
 
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center text-center px-4 w-full">
-            <span className="text-white uppercase tracking-[0.2em] text-[11px] sm:text-xs md:text-sm font-semibold mb-4 sm:mb-6">
+            <motion.span 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="text-white uppercase tracking-[0.2em] text-[11px] sm:text-xs md:text-sm font-semibold mb-4 sm:mb-6"
+            >
               Arriving in the fall
-            </span>
+            </motion.span>
             
-            <h1 className="text-white text-[15vw] sm:text-7xl md:text-8xl lg:text-[130px] font-serif leading-none mb-6">
+            <motion.h1 
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+              className="text-white text-[15vw] sm:text-7xl md:text-8xl lg:text-[130px] font-serif leading-none mb-6"
+            >
               Osun Elements
-            </h1>
+            </motion.h1>
             
-            <p className="text-white text-[15px] sm:text-base md:text-lg max-w-[320px] sm:max-w-md md:max-w-2xl leading-relaxed font-light">
+            <motion.p 
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
+              className="text-white text-[15px] sm:text-base md:text-lg max-w-[320px] sm:max-w-md md:max-w-2xl leading-relaxed font-light"
+            >
               Handcrafted furniture that honors the beauty of its materials, each piece a study in wood grain, leather patina, and deliberate craft.
-            </p>
+            </motion.p>
             
             {/* Scroll Down Arrow (Visible on mobile as per reference) */}
             <button 
