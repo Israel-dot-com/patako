@@ -25,21 +25,21 @@ export default function Footer() {
             {/* Links Grid - Visible here on Mobile, hidden on Desktop */}
             <div className="grid grid-cols-3 gap-4 sm:gap-8 lg:hidden">
               <div className="flex flex-col space-y-3 sm:space-y-4 text-[15px]">
-                <h4 className="text-[11px] sm:text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-1 sm:mb-2">Company</h4>
+                <h4 className="text-[11px] sm:text-xs font-semibold text-zinc-600 uppercase tracking-widest mb-1 sm:mb-2">Company</h4>
                 <Link href="/about" className="text-black hover:opacity-70 transition-opacity">About</Link>
                 <Link href="/faqs" className="text-black hover:opacity-70 transition-opacity">FAQs</Link>
                 <Link href="/contact" className="text-black hover:opacity-70 transition-opacity">Contact</Link>
               </div>
               
               <div className="flex flex-col space-y-3 sm:space-y-4 text-[15px]">
-                <h4 className="text-[11px] sm:text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-1 sm:mb-2">Legal</h4>
+                <h4 className="text-[11px] sm:text-xs font-semibold text-zinc-600 uppercase tracking-widest mb-1 sm:mb-2">Legal</h4>
                 <Link href="/terms" className="text-black hover:opacity-70 transition-opacity">Terms of Service</Link>
                 <Link href="/returns" className="text-black hover:opacity-70 transition-opacity">Return Policy</Link>
                 <Link href="/privacy" className="text-black hover:opacity-70 transition-opacity">Privacy Policy</Link>
               </div>
               
               <div className="flex flex-col space-y-3 sm:space-y-4 text-[15px]">
-                <h4 className="text-[11px] sm:text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-1 sm:mb-2">Socials</h4>
+                <h4 className="text-[11px] sm:text-xs font-semibold text-zinc-600 uppercase tracking-widest mb-1 sm:mb-2">Socials</h4>
                 <a href="#" className="text-black hover:opacity-70 transition-opacity">Instagram</a>
                 <a href="#" className="text-black hover:opacity-70 transition-opacity">Twitter</a>
                 <a href="#" className="text-black hover:opacity-70 transition-opacity">Threads</a>
@@ -55,7 +55,7 @@ export default function Footer() {
                 <input 
                   type="email" 
                   placeholder="Email" 
-                  className="flex-1 bg-transparent py-3 px-2 outline-none text-[15px] placeholder:text-zinc-500"
+                  className="flex-1 bg-transparent py-3 px-2 outline-none text-[15px] placeholder:text-zinc-600"
                   required
                 />
                 <button 
@@ -65,7 +65,7 @@ export default function Footer() {
                   Sign up
                 </button>
               </form>
-              <p className="text-zinc-500 text-[13px] leading-relaxed max-w-md">
+              <p className="text-zinc-600 text-[13px] leading-relaxed max-w-md">
                 Join our list to receive new collections, design stories, and product launches from pátákó. Thoughtful pieces, serene spaces, and crafted living delivered to your inbox.
               </p>
             </div>
@@ -74,21 +74,21 @@ export default function Footer() {
           {/* Right Side: Links Grid - Visible on Desktop, hidden on Mobile */}
           <div className="hidden lg:grid grid-cols-3 gap-16 xl:gap-24 lg:w-1/2 justify-end">
             <div className="flex flex-col space-y-4 text-[15px]">
-              <h4 className="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-2">Company</h4>
+              <h4 className="text-xs font-semibold text-zinc-600 uppercase tracking-widest mb-2">Company</h4>
               <Link href="/about" className="text-black hover:opacity-70 transition-opacity">About</Link>
               <Link href="/faqs" className="text-black hover:opacity-70 transition-opacity">FAQs</Link>
               <Link href="/contact" className="text-black hover:opacity-70 transition-opacity">Contact</Link>
             </div>
             
             <div className="flex flex-col space-y-4 text-[15px]">
-              <h4 className="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-2">Legal</h4>
+              <h4 className="text-xs font-semibold text-zinc-600 uppercase tracking-widest mb-2">Legal</h4>
               <Link href="/terms" className="text-black hover:opacity-70 transition-opacity">Terms of Service</Link>
               <Link href="/returns" className="text-black hover:opacity-70 transition-opacity">Return Policy</Link>
               <Link href="/privacy" className="text-black hover:opacity-70 transition-opacity">Privacy Policy</Link>
             </div>
             
             <div className="flex flex-col space-y-4 text-[15px]">
-              <h4 className="text-xs font-semibold text-zinc-400 uppercase tracking-widest mb-2">Socials</h4>
+              <h4 className="text-xs font-semibold text-zinc-600 uppercase tracking-widest mb-2">Socials</h4>
               <a href="#" className="text-black hover:opacity-70 transition-opacity">Instagram</a>
               <a href="#" className="text-black hover:opacity-70 transition-opacity">Twitter</a>
               <a href="#" className="text-black hover:opacity-70 transition-opacity">Threads</a>

@@ -52,7 +52,7 @@ export default function Shop() {
                 <button
                   key={cat.name}
                   className={`whitespace-nowrap text-[15px] pb-2 border-b-2 transition-colors ${
-                    cat.active ? "text-black border-black" : "text-black/40 border-transparent hover:text-black"
+                    cat.active ? "text-black border-black" : "text-black/60 border-transparent hover:text-black"
                   }`}
                 >
                   {cat.name}
@@ -66,7 +66,7 @@ export default function Shop() {
                 <button
                   key={cat.name}
                   className={`text-left text-[15px] transition-colors ${
-                    cat.active ? "text-black font-medium" : "text-black/40 hover:text-black"
+                    cat.active ? "text-black font-medium" : "text-black/60 hover:text-black"
                   }`}
                 >
                   {cat.name}
@@ -84,7 +84,7 @@ export default function Shop() {
                   {/* Image Container */}
                   <div className="relative w-full aspect-[4/5] bg-zinc-200 overflow-hidden mb-4">
                     {/* Heart Icon Overlay */}
-                    <button className="absolute top-4 right-4 z-10 text-white hover:opacity-70 transition-opacity">
+                    <button aria-label="Add to wishlist" className="absolute top-4 right-4 z-10 text-white hover:opacity-70 transition-opacity">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                       </svg>
@@ -97,7 +97,7 @@ export default function Shop() {
                   {/* Product Info */}
                   <div className="flex flex-col">
                     <h3 className="text-black text-[15px] mb-1">{product.name}</h3>
-                    <p className="text-zinc-500 text-sm font-serif">{product.price}</p>
+                    <p className="text-zinc-600 text-sm font-serif">{product.price}</p>
                   </div>
 
                 </div>

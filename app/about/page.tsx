@@ -35,7 +35,7 @@ export default function About() {
         <section className="w-full px-4 lg:px-6 py-16 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
             <div>
-              <h4 className="text-[11px] md:text-xs font-bold tracking-widest uppercase mb-6 md:mb-10 text-black">About</h4>
+              <p className="text-[11px] md:text-xs font-bold tracking-widest uppercase mb-6 md:mb-10 text-black">About</p>
               <h3 className="text-3xl md:text-4xl lg:text-[42px] leading-snug md:leading-[1.2] text-black pr-4 lg:pr-12">
                 pátákó bridges Japanese precision and Scandinavian clarity, creating furniture that invites contemplation.
               </h3>
@@ -51,7 +51,7 @@ export default function About() {
         <section className="w-full px-4 lg:px-6 pb-24 md:pb-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
             <div className="flex flex-col justify-center order-2 md:order-1 lg:pl-12">
-              <h4 className="text-lg md:text-xl font-bold uppercase tracking-tight mb-4 text-black">Form Follows Silence</h4>
+              <h2 className="text-lg md:text-xl font-bold uppercase tracking-tight mb-4 text-black">Form Follows Silence</h2>
               <p className="text-black/80 leading-relaxed text-[15px] md:text-base max-w-md">
                 Every curve, every angle considered. Nothing arbitrary, nothing excessive. The wood speaks first, we listen, then shape what it was always meant to become.
               </p>

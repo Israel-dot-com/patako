@@ -18,11 +18,11 @@ export default function Home() {
             priority
             sizes="100vw"
             className="object-cover"
-            quality={100}
+            quality={75}
           />
 
           {/* Overlay to ensure text readability */}
-          <div className="absolute inset-0 bg-black/10"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
 
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center text-center px-4 w-full">
@@ -93,7 +93,7 @@ export default function Home() {
                 {/* Image Container */}
                 <div className="relative w-full aspect-[4/5] bg-zinc-200 overflow-hidden mb-4">
                   {/* Heart Icon Overlay */}
-                  <button className="absolute top-4 right-4 z-10 text-white hover:opacity-70 transition-opacity">
+                  <button aria-label="Add to wishlist" className="absolute top-4 right-4 z-10 text-white hover:opacity-70 transition-opacity">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
@@ -106,7 +106,7 @@ export default function Home() {
                 {/* Product Info */}
                 <div className="flex flex-col">
                   <h3 className="text-black text-[15px] mb-1">{product.name}</h3>
-                  <p className="text-zinc-500 text-sm font-serif">{product.price}</p>
+                  <p className="text-zinc-600 text-sm font-serif">{product.price}</p>
                 </div>
 
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
                 In Defense of<br/>Empty Walls
               </h2>
               <div className="max-w-[420px]">
-                <h3 className="text-[13px] font-bold tracking-widest uppercase mb-4 text-black">The Quiet Revolution of Less</h3>
+                <p className="text-[13px] font-bold tracking-widest uppercase mb-4 text-black">The Quiet Revolution of Less</p>
                 <p className="text-black/70 leading-relaxed text-[15px] md:text-base">
                   There's something profound about spaces that whisper rather than shout. At pátákó, we understand that true sophistication lies not in excess, but in the careful curation of elements that speak to both heart and mind.
                 </p>
@@ -155,7 +155,7 @@ export default function Home() {
 
             {/* Text Content */}
             <div className="flex flex-col justify-between order-2 h-full py-2 lg:py-12">
-              <h3 className="text-[13px] font-bold tracking-widest uppercase mb-12 md:mb-0 text-black">Crimson Forms</h3>
+              <p className="text-[13px] font-bold tracking-widest uppercase mb-12 md:mb-0 text-black">Crimson Forms</p>
               <div className="max-w-[480px]">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-black leading-tight mb-6">
                   Tokyo Accent Chair
@@ -199,7 +199,7 @@ export default function Home() {
                 {/* Image Container */}
                 <div className="relative w-full aspect-[4/5] bg-zinc-200 overflow-hidden mb-4">
                   {/* Heart Icon Overlay */}
-                  <button className="absolute top-4 right-4 z-10 text-white hover:opacity-70 transition-opacity">
+                  <button aria-label="Add to wishlist" className="absolute top-4 right-4 z-10 text-white hover:opacity-70 transition-opacity">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
@@ -212,7 +212,7 @@ export default function Home() {
                 {/* Product Info */}
                 <div className="flex flex-col">
                   <h3 className="text-black text-[15px] mb-1">{product.name}</h3>
-                  <p className="text-zinc-500 text-sm font-serif">{product.price}</p>
+                  <p className="text-zinc-600 text-sm font-serif">{product.price}</p>
                 </div>
 
               </div>
