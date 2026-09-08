@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Massive Logo */}
         <div className="mb-12 lg:mb-20">
           <h2 className="text-[18vw] sm:text-[15vw] lg:text-[12vw] xl:text-[14rem] font-serif leading-none tracking-tight text-black">
-            Craftwood
+            pátákó
           </h2>
         </div>
 
@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Left Side: Mission & Mobile Links (on mobile, links come after mission, before newsletter) */}
           <div className="flex flex-col gap-12 lg:w-5/12 xl:w-1/3">
             <p className="text-black/80 text-[15px] sm:text-base leading-relaxed max-w-md">
-              Craftwood exists to bring calm design and natural warmth into modern homes through furniture crafted with balance, purpose, and quiet beauty.
+              pátákó exists to bring calm design and natural warmth into modern homes through furniture crafted with balance, purpose, and quiet beauty.
             </p>
 
             {/* Links Grid - Visible here on Mobile, hidden on Desktop */}
@@ -66,7 +66,7 @@ export default function Footer() {
                 </button>
               </form>
               <p className="text-zinc-500 text-[13px] leading-relaxed max-w-md">
-                Join our list to receive new collections, design stories, and product launches from Craftwood. Thoughtful pieces, serene spaces, and crafted living delivered to your inbox.
+                Join our list to receive new collections, design stories, and product launches from pátákó. Thoughtful pieces, serene spaces, and crafted living delivered to your inbox.
               </p>
             </div>
           </div>

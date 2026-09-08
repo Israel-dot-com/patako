@@ -16,6 +16,7 @@ export default function Home() {
             alt="Ochre Elements Furniture"
             fill
             priority
+            sizes="100vw"
             className="object-cover"
             quality={100}
           />
@@ -99,7 +100,7 @@ export default function Home() {
                   </button>
                   
                   {/* Placeholder for the actual image, you can replace the div below with next/image */}
-                  <div className="absolute inset-0 bg-stone-200 transition-transform duration-700 group-hover:scale-105"></div>
+                  <Image src={`/src/${product.id}.jpg`} alt={product.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
 
                 {/* Product Info */}
@@ -134,14 +135,14 @@ export default function Home() {
               <div className="max-w-[420px]">
                 <h3 className="text-[13px] font-bold tracking-widest uppercase mb-4 text-black">The Quiet Revolution of Less</h3>
                 <p className="text-black/70 leading-relaxed text-[15px] md:text-base">
-                  There's something profound about spaces that whisper rather than shout. At Craftwood, we understand that true sophistication lies not in excess, but in the careful curation of elements that speak to both heart and mind.
+                  There's something profound about spaces that whisper rather than shout. At pátákó, we understand that true sophistication lies not in excess, but in the careful curation of elements that speak to both heart and mind.
                 </p>
               </div>
             </div>
             
             {/* Image */}
             <div className="relative w-full aspect-[4/5] bg-stone-300 order-2">
-              <div className="absolute inset-0 bg-stone-200 transition-transform duration-700 hover:scale-[1.02] cursor-pointer"></div>
+              <Image src="/src/5.jpg" alt="Console Table" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 hover:scale-[1.02] cursor-pointer" />
             </div>
           </div>
 
@@ -149,7 +150,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-24">
             {/* Image */}
             <div className="relative w-full aspect-[4/5] bg-stone-200 order-1">
-              <div className="absolute inset-0 bg-stone-100 transition-transform duration-700 hover:scale-[1.02] cursor-pointer"></div>
+              <Image src="/src/6.jpg" alt="Tokyo Accent Chair" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-700 hover:scale-[1.02] cursor-pointer" />
             </div>
 
             {/* Text Content */}
@@ -205,7 +206,7 @@ export default function Home() {
                   </button>
                   
                   {/* Placeholder for image */}
-                  <div className="absolute inset-0 bg-stone-200 transition-transform duration-700 group-hover:scale-[1.03]"></div>
+                  <Image src={`/src/${(product.id % 11) + 1}.jpg`} alt={product.name} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                 </div>
 
                 {/* Product Info */}
